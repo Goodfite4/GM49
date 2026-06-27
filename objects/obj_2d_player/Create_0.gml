@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+gravity_force = 0.4;
 hsp = 0;
 vsp = 0;
 
