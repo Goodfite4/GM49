@@ -1,5 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-y = ystart + 4;
-
-alarm[0] = 10;
+dark_surf = -1;
+light_radius = 160;
+window_set_cursor(cr_none);
