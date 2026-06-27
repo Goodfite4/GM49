@@ -1,8 +1,9 @@
-// When you press and hold any of these buttons their values go to 1,
-// so you can multiply that by spd += the co ordinates to make them go somewhere
-
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function controls(){
-left = keyboard_check_direct(ord("A")) || keyboard_check(vk_left);\nright = keyboard_check_direct(ord("D")) || keyboard_check(vk_right);\nup = keyboard_check_direct(ord("W")) || keyboard_check(vk_up);\ndown = keyboard_check_direct(ord("S")) || keyboard_check(vk_down);\ncrouch = down;\n
+left = keyboard_check(ord("A")) || keyboard_check(vk_left);
+right = keyboard_check_direct(ord("D")) || keyboard_check(vk_right);
+crouch = keyboard_check_direct(ord("S")) || keyboard_check(vk_down);
 attack = mouse_check_button_pressed(mb_left);
 jump = keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up);
 }

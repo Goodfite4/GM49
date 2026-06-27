@@ -1,3 +1,3 @@
-global.gravity_var = 0.25;
+//global.gravity_var = 0.25;
 
-game_set_speed(60, gamespeed_fps);
+//game_set_speed(60, gamespeed_fps);

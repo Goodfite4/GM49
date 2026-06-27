@@ -1,27 +1,37 @@
-// middle click any function to go to it
-
+/// @description Insert description here
+// You can write your code in this editor
 controls();
 
 hsp = (right - left) * spd;
 
-movement(obj_2d_player);
-
-if (on_floor() && jump) {
+if (jump && place_meeting(x, y + 1, obj_wall_main))
+{
     vsp = jump_spd;
 }
 
-// horizontal collision
+// Gravity
+vsp += gravity_force;
+
+// Horizontal collision
 if (place_meeting(x + hsp, y, obj_wall_main))
 {
     while (!place_meeting(x + sign(hsp), y, obj_wall_main))
     {
         x += sign(hsp);
     }
-
     hsp = 0;
 }
 
 x += hsp;
 
-collision();
+// Vertical collision
+if (place_meeting(x, y + vsp, obj_wall_main))
+{
+    while (!place_meeting(x, y + sign(vsp), obj_wall_main))
+    {
+        y += sign(vsp);
+    }
+    vsp = 0;
+}
 
+y += vsp;
