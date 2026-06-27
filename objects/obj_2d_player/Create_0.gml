@@ -23,3 +23,7 @@ jump_dampner = 4;
 hit_dmg = 5;
 hit_stagger = 5;
 
+controls()
+
+//hsp = (right - left)* spd;
+
