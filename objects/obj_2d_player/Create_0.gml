@@ -16,9 +16,8 @@ crouch = 0;
 
 // init random stuff man i dont know
 
-
 spd = 4;
-jump_spd = -5;
+jump_spd = -8;
 jump_dampner = 4;
 hit_dmg = 5;
 hit_stagger = 5;

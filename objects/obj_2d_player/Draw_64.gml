@@ -1,0 +1,1 @@
+draw_rectangle(self.x, self.y, x+64, y+64, false);

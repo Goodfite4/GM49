@@ -9,3 +9,5 @@ if on_floor() and jump {
 	}
 	
 collision();
+
+boundaries();
