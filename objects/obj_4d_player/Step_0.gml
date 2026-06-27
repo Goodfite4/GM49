@@ -2,10 +2,6 @@
 // You can write your code in this editor
 controls();
 
-movement("2d");
+movement("4d");
 
-if on_floor() and jump { 
-	vsp = jump_spd;
-	}
-	
 collision();
