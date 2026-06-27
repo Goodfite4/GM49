@@ -1,18 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_2d_player",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_wall_wood",
+  "eventList":[],
   "managed":true,
-  "name":"obj_2d_player",
+  "name":"obj_wall_wood",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
     "path":"folders/objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_wall_main",
+    "path":"objects/obj_wall_main/obj_wall_main.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite1",
-    "path":"sprites/Sprite1/Sprite1.yy",
+    "name":"spr_wall_wood",
+    "path":"sprites/spr_wall_wood/spr_wall_wood.yy",
   },
   "spriteMaskId":null,
   "visible":true,

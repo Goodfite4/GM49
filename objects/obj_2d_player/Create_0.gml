@@ -25,5 +25,5 @@ hit_stagger = 5;
 
 controls()
 
-hsp = (right - left)* spd;
+//hsp = (right - left)* spd;
 
