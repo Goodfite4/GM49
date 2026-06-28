@@ -19,7 +19,10 @@ gpu_set_blendmode(bm_subtract);
 
 draw_set_color(c_white);
 
-draw_circle(x, y, light_radius, false);
+with (obj_torch)
+{
+    draw_circle(x, y, light_radius, false);
+}
 
 gpu_set_blendmode(bm_normal);
 
