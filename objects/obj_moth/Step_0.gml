@@ -15,7 +15,6 @@ if (instance_exists(target))
         var nx = x + hsp;
         var ny = y + vsp;
 
-        // Move if nothing is blocking the way
         if (!tile_blocked(nx, ny))
         {
             x = nx;
@@ -23,7 +22,7 @@ if (instance_exists(target))
         }
         else
         {
-            // Slide along walls
+
             if (!tile_blocked(nx, y))
                 x = nx;
 
@@ -31,7 +30,9 @@ if (instance_exists(target))
                 y = ny;
         }
 
-        // Face the direction of travel
+		audio_play_sound(snd_moth, 0, false);
+		audio_sound_pitch(snd_moth, random_range(0.95, 1.05));
+		audio_sound_gain(snd_moth, 0.2, 0);
         image_angle = dir;
     }
 }

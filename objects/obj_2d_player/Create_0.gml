@@ -19,17 +19,20 @@ crouch = 0;
 spd = 4;
 jump_spd = -8;
 jump_dampner = 4;
-hit_dmg = 5;
-hit_stagger = 5;
+
 
 is_on = false;
 
+//sounds
+move_sound_timer = 0;
+move_sound_delay = 10;
 
 dark_surf = -1;
 light_radius = 160;
 
 has_lightswitch = false;
 
+was_touching_goat = false;
 
 //hsp = (right - left)* spd;
 

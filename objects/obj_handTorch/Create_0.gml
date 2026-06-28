@@ -9,4 +9,6 @@ is_on = true;
 
 light_instance = noone;
 
+was_touching_goat = false;
+
 window_set_cursor(cr_default);

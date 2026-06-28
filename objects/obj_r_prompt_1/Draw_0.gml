@@ -1,1 +1,1 @@
-draw_text(x, y, "you can pick this up with your mouse");
+draw_text(x, y, "you can pick the candle up with your mouse");
