@@ -6,7 +6,7 @@ var cam_y = camera_get_view_y(cam);
 var sx = self.x - cam_x;
 var sy = self.y - cam_y;
 
-draw_rectangle(sx-16, sy-16, sx+16, sy+16, false);
+draw_self()
 
 if instance_exists(obj_switch) {
 	if point_distance(self.x, self.y, obj_switch.x, obj_switch.y) < 50
