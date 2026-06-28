@@ -53,3 +53,14 @@ if (touching && !was_touching_goat)
 }
 
 was_touching_goat = touching;
+
+sprite_index = spr_player;
+
+if (moving)
+{
+    image_speed = 1;
+}
+else
+{
+    image_speed = 0;
+}
