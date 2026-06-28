@@ -23,7 +23,7 @@ function moth_boundaries(){
         }
     }
 
-    if (hits / samples >= 0.25)
+    if (hits / samples >= 0.23)
     {
         room_restart();
     }

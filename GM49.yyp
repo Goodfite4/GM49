@@ -49,6 +49,7 @@
     {"id":{"name":"obj_moth_switch","path":"objects/obj_moth_switch/obj_moth_switch.yy",},},
     {"id":{"name":"obj_moth","path":"objects/obj_moth/obj_moth.yy",},},
     {"id":{"name":"obj_portable_lightswitch","path":"objects/obj_portable_lightswitch/obj_portable_lightswitch.yy",},},
+    {"id":{"name":"obj_r_prompt","path":"objects/obj_r_prompt/obj_r_prompt.yy",},},
     {"id":{"name":"obj_switch","path":"objects/obj_switch/obj_switch.yy",},},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
     {"id":{"name":"obj_torch_1","path":"objects/obj_torch_1/obj_torch_1.yy",},},
@@ -99,8 +100,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Z_room_4","path":"rooms/Z_room_4/Z_room_4.yy",},},
-    {"roomId":{"name":"Z_Room1","path":"rooms/Z_Room1/Z_Room1.yy",},},
     {"roomId":{"name":"Z_Room_3","path":"rooms/Z_Room_3/Z_Room_3.yy",},},
+    {"roomId":{"name":"Z_Room1","path":"rooms/Z_Room1/Z_Room1.yy",},},
     {"roomId":{"name":"Z_Room2","path":"rooms/Z_Room2/Z_Room2.yy",},},
     {"roomId":{"name":"rm_4","path":"rooms/rm_4/rm_4.yy",},},
     {"roomId":{"name":"rm_3","path":"rooms/rm_3/rm_3.yy",},},
