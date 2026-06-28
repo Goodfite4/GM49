@@ -1,3 +1,13 @@
+var cam = view_camera[0];
+
+var cam_x = camera_get_view_x(cam);
+var cam_y = camera_get_view_y(cam);
+
+var sx = self.x - cam_x;
+var sy = self.y - cam_y;
+
+draw_rectangle(sx-16, sy-16, sx+16, sy+16, false);
+
 if instance_exists(obj_switch) {
 	if point_distance(self.x, self.y, obj_switch.x, obj_switch.y) < 50
 
@@ -30,15 +40,7 @@ gpu_set_blendmode(bm_subtract);
 
 draw_set_color(c_white);
 
-var cam = view_camera[0];
-
-var cam_x = camera_get_view_x(cam);
-var cam_y = camera_get_view_y(cam);
-
-var sx = self.x - cam_x;
-var sy = self.y - cam_y;
-
-draw_circle(sx, sy, light_radius, false);
+draw_circle(sx, sy, light_radius - 80, false);
 
 gpu_set_blendmode(bm_normal);
 

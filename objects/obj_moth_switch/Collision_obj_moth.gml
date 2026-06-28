@@ -11,5 +11,7 @@ if (!activated)
         instance_destroy();
 
         instance_create_layer(xx, yy, lay, other.replacement_object);
+		obj_door.roomtogo = Z_room_4;
+
     }
 }

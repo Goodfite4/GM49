@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_switch_1",
+  "%Name":"obj_moth_switch",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_moth","path":"objects/obj_moth/obj_moth.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_switch_1",
+  "name":"obj_moth_switch",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
