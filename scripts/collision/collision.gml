@@ -2,55 +2,20 @@ function collision()
 {
     var map = layer_tilemap_get_id("t_collision");
 
-    function solid_vertical(_x, _y, _map, _vsp)
-    {
-        // tile collision
-        if (place_meeting(_x, _y, _map)) {
-            return true;
-        }
-
-        // elevator/platform collision only when falling
-        if (_vsp >= 0 && place_meeting(_x, _y, obj_elevator)) {
-            return true;
-        }
-
-        // gate collision only when closed
-        var gate = instance_place(_x, _y, obj_gate);
-        if (gate != noone && !gate.is_open) {
-            return true;
-        }
-
-        return false;
-    }
-
-    function solid_horizontal(_x, _y, _map)
-    {
-        // tile collision
-        if (place_meeting(_x, _y, _map)) {
-            return true;
-        }
-
-        // gate collision only when closed
-        var gate = instance_place(_x, _y, obj_gate);
-        if (gate != noone && !gate.is_open) {
-            return true;
-        }
-
-        return false;
-    }
-
     // VERTICAL COLLISION
+
     if (vsp != 0)
     {
-        if (!solid_vertical(x, y + vsp, map, vsp))
+        if (!place_meeting(x, y + vsp, map))
         {
             y += vsp;
         }
         else
         {
+            // move pixel-by-pixel until just before collision
             var step = sign(vsp);
 
-            while (!solid_vertical(x, y + step, map, vsp))
+            while (!place_meeting(x, y + step, map))
             {
                 y += step;
             }
@@ -60,9 +25,10 @@ function collision()
     }
 
     // HORIZONTAL COLLISION
+
     if (hsp != 0)
     {
-        if (!solid_horizontal(x + hsp, y, map))
+        if (!place_meeting(x + hsp, y, map))
         {
             x += hsp;
         }
@@ -70,7 +36,7 @@ function collision()
         {
             var step = sign(hsp);
 
-            while (!solid_horizontal(x + step, y, map))
+            while (!place_meeting(x + step, y, map))
             {
                 x += step;
             }
