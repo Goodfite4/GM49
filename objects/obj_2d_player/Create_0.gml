@@ -22,5 +22,14 @@ jump_dampner = 4;
 hit_dmg = 5;
 hit_stagger = 5;
 
+is_on = false;
+
+
+dark_surf = -1;
+light_radius = 160;
+
+has_lightswitch = false;
+
+
 //hsp = (right - left)* spd;
 

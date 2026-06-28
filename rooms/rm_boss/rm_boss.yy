@@ -17,8 +17,8 @@
   ],
   "name":"rm_boss",
   "parent":{
-    "name":"GM49",
-    "path":"GM49.yyp",
+    "name":"Rooms",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

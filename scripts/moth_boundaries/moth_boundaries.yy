@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"moth_boundaries",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"moth_boundaries",
+  "parent":{
+    "name":"npc_scripts",
+    "path":"folders/Scripts/npc_scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

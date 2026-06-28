@@ -1,0 +1,1 @@
+obj_2d_player.is_on = true;

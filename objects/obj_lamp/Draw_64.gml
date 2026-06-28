@@ -9,7 +9,7 @@ surface_set_target(dark_surf);
 draw_clear_alpha(c_black, 0);
 
 // Dark background overlay
-draw_set_alpha(1);
+draw_set_alpha(0.8);
 draw_set_color(c_black);
 draw_rectangle(0, 0, display_get_gui_width(), display_get_gui_height(), false);
 draw_set_alpha(1);
@@ -18,7 +18,7 @@ draw_set_alpha(1);
 gpu_set_blendmode(bm_subtract);
 
 draw_set_color(c_white);
-draw_triangle(x, y, x-1000, y+500, x+1000, y+500, false);
+draw_rectangle(0, 0, display_get_gui_width(), display_get_gui_height(), false);
 
 gpu_set_blendmode(bm_normal);
 

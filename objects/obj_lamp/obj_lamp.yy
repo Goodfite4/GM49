@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_torch",
-    "path":"sprites/spr_torch/spr_torch.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

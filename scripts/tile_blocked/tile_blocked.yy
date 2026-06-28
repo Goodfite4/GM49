@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"tile_blocked",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tile_blocked",
+  "parent":{
+    "name":"npc_scripts",
+    "path":"folders/Scripts/npc_scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
